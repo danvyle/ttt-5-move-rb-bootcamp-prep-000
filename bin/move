@@ -19,7 +19,7 @@ end
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go? (Select from 1-8)"
 
-user_input = STDIN.gets.chomp.to_i
+user_input = gets.chomp.to_i
 
 def input_to_index(user_input)
   converted_input = user_input.to_i - 1
