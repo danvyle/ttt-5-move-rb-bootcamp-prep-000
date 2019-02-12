@@ -18,10 +18,15 @@ user_input = gets.chomp.to_i
 def input_to_index(user_input)
   converted_input = user_input.to_i - 1
 end
-input_to_index(user_input)
-def move (board, input_to_index, character="X")
-  board[input_to_index] = character
+
+place = input_to_index(user_input) 
+
+def move (board, place, character="X")
+  board[place] = character
+  display_board(board)
 end
+
+move(board, place, "O")
 
 
 
