@@ -32,7 +32,7 @@ def move (board, place, character="X")
   display_board(board)
 end
 
-move(board, place, "O")
+move(board, place)
 
 
 
